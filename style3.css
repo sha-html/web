@@ -1,0 +1,115 @@
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://anonymous-news.com/wp-content/uploads/2016/04/greywhiteblack-e1460785817802.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-duration: 4s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+img {
+  color-adjust: grey;
+}
+nav {
+  width: 100%;
+  height: 10vh;
+  color: #00b894;
+  font-style: italic;
+  font-weight: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+nav .logo {
+  text-align: center;
+  width: 25%;
+}
+nav .menu {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+nav .menu a {
+  width: 25%;
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: bold;
+}
+main {
+  text-align: center;
+  color: white;
+  align-items: center;
+  width: 100%;
+  height: 85vh;
+  justify-content: center;
+  display: flex;
+}
+section h3 {
+  font-size: 20px;
+  color: darkgoldenrod;
+  word-spacing: 10px;
+  text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.877);
+}
+section h1 {
+  font-size: 50px;
+  color: darkred;
+  text-shadow: 1px 1px 2px black;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+section p {
+  font-size: 20px;
+  color: darkorange;
+  word-spacing: 3px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 2px black;
+}
+section a {
+  word-spacing: 3pxpx;
+  font-size: 25px;
+  padding: center;
+  text-decoration: none;
+  background-color: darkgreen;
+  color: white;
+  font-weight: bold;
+}
+.change_content:after {
+  animation: changetext 10s infinite linear;
+  color: #00b894;
+  content: "";
+}
+@keyframes changetext {
+  0% {
+    content: "Basic Computer Skills";
+  }
+  20% {
+    content: "Linux Skills";
+  }
+  40% {
+    content: "Wireshark";
+  }
+  45% {
+    content: "Virtualization";
+  }
+  50% {
+    content: "Security Concept & Technologies";
+  }
+  60% {
+    content: "Web Applications";
+  }
+  80% {
+    content: "Database Skills";
+  }
+  100% {
+    content: "Networking Skills";
+  }
+}
